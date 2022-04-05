@@ -23,14 +23,12 @@ class ShowLongTextAsToolTipListWidget(QListWidget):
             text = item.text()
         self.setItemWidget(item, QWidget())
         super().addItem(item)
-        item_width = self.fontMetrics().boundingRect(text).width()
-        if item_width > self.width():
-            item.setToolTip(text)
 
     def __showToolTip(self, item: QListWidgetItem):
-        item_width = self.visualItemRect(item).width()
+        text = item.text()
+        text_width = self.fontMetrics().boundingRect(text).width()
         width = self.width()
-        if item_width > width:
-            item.setToolTip(item.text())
+        if text_width > width:
+            item.setToolTip(text)
         else:
             item.setToolTip('')
