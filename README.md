@@ -1,11 +1,11 @@
-# pyqt-show-long-text-as-tooltip-list-widget
+# pyqt-tooltip-list-widget
 PyQt QListWidget which shows text as tooltip longer than widget\'s size
 
 ## Requirements
 * PyQt5 >= 5.8
 
 ## Setup
-```pip3 install git+https://github.com/yjg30737/pyqt-show-long-text-as-tooltip-list-widget.git --upgrade```
+`python -m pip install pyqt-tooltip-list-widget`
 
 ## Example
 Code Sample
