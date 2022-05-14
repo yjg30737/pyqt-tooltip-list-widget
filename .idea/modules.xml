@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/pyqt_show_long_text_as_tooltip_list_widget.iml" filepath="$PROJECT_DIR$/.idea/pyqt_show_long_text_as_tooltip_list_widget.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/pyqt_tooltip_list_widget.iml" filepath="$PROJECT_DIR$/.idea/pyqt_tooltip_list_widget.iml" />
     </modules>
   </component>
 </project>
