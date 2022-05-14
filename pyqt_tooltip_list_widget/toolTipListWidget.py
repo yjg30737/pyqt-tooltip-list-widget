@@ -1,7 +1,7 @@
 from PyQt5.QtWidgets import QListWidget, QWidget, QListWidgetItem
 
 
-class ShowLongTextAsToolTipListWidget(QListWidget):
+class ToolTipListWidget(QListWidget):
 
     def __init__(self):
         super().__init__()

@@ -9,9 +9,10 @@ PyQt QListWidget which shows text as tooltip longer than widget\'s size
 
 ## Example
 Code Sample
+
 ```python
 from PyQt5.QtWidgets import QWidget, QGridLayout, QApplication
-from pyqt_show_long_text_as_tooltip_list_widget import ShowLongTextAsToolTipListWidget
+from pyqt_tooltip_list_widget import ToolTipListWidget
 
 
 class Widget(QWidget):
@@ -20,8 +21,9 @@ class Widget(QWidget):
         self.__initUi()
 
     def __initUi(self):
-        self.__listWidget = ShowLongTextAsToolTipListWidget()
-        self.__listWidget.addItem('Note: The selection rectangle will only be visible if the selection mode is in a mode where more than one item can be selected; i.e., it will not draw a selection rectangle if the selection mode is QAbstractItemView::SingleSelection.')
+        self.__listWidget = ToolTipListWidget()
+        self.__listWidget.addItem(
+            'Note: The selection rectangle will only be visible if the selection mode is in a mode where more than one item can be selected; i.e., it will not draw a selection rectangle if the selection mode is QAbstractItemView::SingleSelection.')
         self.__listWidget.addItem('B')
         self.__listWidget.addItem('C')
 
